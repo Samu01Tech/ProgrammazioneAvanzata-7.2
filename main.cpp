@@ -12,5 +12,11 @@ int main() {
         cout << *iter << endl;
     }
 
+    cout << endl;
+
+    for(auto riter = vi.rbegin(); riter != vi.rend(); ++riter){
+        cout << *riter << endl;
+    }
+
   return 0;
 } 
