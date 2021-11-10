@@ -44,5 +44,19 @@ int main() {
         it++;
         cout << it << endl;
     }
+
+    cout << endl;
+
+    //range-based loop (for nuovo)
+    for (auto item : vi){
+        cout << item << endl;
+    }
+
+    cout << endl;
+
+    float a[3] = {3.1, 5.8, -0.5};
+    for (float i : a){
+        cout << i << endl;
+    }
   return 0;
 } 
