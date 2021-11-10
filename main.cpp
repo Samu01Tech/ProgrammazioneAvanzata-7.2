@@ -18,5 +18,11 @@ int main() {
         cout << *riter << endl;
     }
 
+    cout << endl;
+
+    for (auto& it : vi){
+        cout << it << endl;
+    }
+
   return 0;
 } 
