@@ -55,7 +55,7 @@ int main() {
     cout << endl;
 
     float a[3] = {3.1, 5.8, -0.5};
-    for (float i : a){
+    for (const auto& i : a){
         cout << i << endl;
     }
   return 0;
