@@ -24,7 +24,7 @@ int main() {
     cout << endl;
 
     // stampa fast
-    for (auto& it : vi){
+    for (const auto& it : vi){
         cout << it << endl;
     }
 
@@ -33,9 +33,11 @@ int main() {
     //stampa fast reverse + algorithm: reverse()
     reverse(vi.begin(), vi.end());
 
-    for (auto& it : vi){
+    for (const auto& it : vi){
         cout << it << endl;
     }
+
+    cout << endl;
 
     //modifica nell'itteratore (per copia)
     for (auto it : vi){
