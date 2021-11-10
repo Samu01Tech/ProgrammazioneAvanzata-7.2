@@ -36,6 +36,11 @@ int main() {
     for (auto& it : vi){
         cout << it << endl;
     }
-    
+
+    //modifica nell'itteratore (per copia)
+    for (auto it : vi){
+        it++;
+        cout << it << endl;
+    }
   return 0;
 } 
