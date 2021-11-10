@@ -9,28 +9,33 @@ int main() {
     vi.push_back(22);
     vi.push_back(33);
 
+    //stampa auto
     for(auto iter = vi.begin(); iter != vi.end(); ++iter){
         cout << *iter << endl;
     }
 
     cout << endl;
 
+    //stampa auto reverse
     for(auto riter = vi.rbegin(); riter != vi.rend(); ++riter){
         cout << *riter << endl;
     }
 
     cout << endl;
 
+    // stampa fast
     for (auto& it : vi){
         cout << it << endl;
     }
 
     cout << endl;
 
+    //stampa fast reverse + algorithm: reverse()
     reverse(vi.begin(), vi.end());
 
     for (auto& it : vi){
         cout << it << endl;
     }
+    
   return 0;
 } 
