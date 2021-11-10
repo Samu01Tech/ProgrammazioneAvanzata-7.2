@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 int main() {
@@ -7,7 +8,7 @@ int main() {
     vi.push_back(11);
     vi.push_back(22);
     vi.push_back(33);
-    
+
     for(auto iter = vi.begin(); iter != vi.end(); ++iter){
         cout << *iter << endl;
     }
@@ -24,5 +25,12 @@ int main() {
         cout << it << endl;
     }
 
+    cout << endl;
+
+    reverse(vi.begin(), vi.end());
+
+    for (auto& it : vi){
+        cout << it << endl;
+    }
   return 0;
 } 
